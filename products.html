@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products  Rehoboth Technology</title>
+  <meta name="description" content="Browse Rehoboth Technology's range of computers, smartphones, TVs, solar panels, and electronic accessories." />
+  <meta property="og:title"       content="Products  Rehoboth Technology" />
+  <meta property="og:description" content="Computers, phones, TVs, solar panels, and accessories." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header>
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Rehoboth Technology  Home">
+        <div class="nav-logo-icon" aria-hidden="true"><img src="images/logo.png" alt="" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" /><svg viewBox="0 0 24 24" class="logo-fallback"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg></div>
+        <div class="nav-logo-text">Rehoboth Technology<span>Technology</span></div>
+      </a>
+      <div class="nav-links" id="nav-links" role="menubar">
+        <a href="index.html"    role="menuitem" data-en="Home"       data-am="መነሻ">Home</a>
+        <a href="about.html"    role="menuitem" data-en="About"      data-am="ስለ እኛ">About</a>
+        <a href="services.html" role="menuitem" data-en="Services"   data-am="አገልግሎቶች">Services</a>
+        <a href="products.html" role="menuitem" data-en="Products"   data-am="ምርቶች">Products</a>
+        <a href="contact.html"  role="menuitem" class="nav-cta" data-en="Contact Us" data-am="ያግኙን">Contact Us</a>
+      </div>
+      <button class="lang-toggle" aria-label="Switch to Amharic"><span class="lang-toggle-label">አማርኛ</span></button>
+      <button class="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+<!-- HERO -->
+<section class="hero hero-inner" aria-label="Products page hero">
+  <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+  <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+  <div class="hero-content">
+    <span class="hero-badge">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm0 10c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
+      <span data-en="Quality Electronics" data-am="ጥራት ያላቸው ኤሌክትሮኒክሶች">Quality Electronics</span>
+    </span>
+    <h1 data-en="Our Products" data-am="ምርቶቻችን">Our <span class="accent">Products</span></h1>
+    <p class="hero-sub" data-en="Quality electronics across five categories  all backed by the expertise of our team. Not sure what's right for you? Ask us before you buy." data-am="በአምስት ምድቦች ጥራት ያላቸው ኤሌክትሮኒክሶች  ሁሉም በቡድናችን ብቃት የተደገፉ። ምን ይስማማዎታል ብለው ከተጠራጠሩ  ከመግዛትዎ በፊት ይጠይቁን።">
+      Quality electronics across five categories  all backed by the expertise of our team.
+      Not sure what's right for you? Ask us before you buy.
+    </p>
+  </div>
+</section>
+
+<!-- NOTE -->
+<section class="section" aria-label="Products note">
+  <div class="container">
+    <div class="disclaimer-box reveal" style="max-width:800px;margin-inline:auto;margin-bottom:0;">
+      <strong>Note:</strong> <span data-en="The product listings below are illustrative examples. Contact us for current stock, models, and pricing." data-am="ከዚህ በታች ያሉ ምርቶች ምሳሌያዊ ናቸው። ስለ ነባር ክምችት፣ ሞዴሎች እና ዋጋ ያግኙን።">The product listings below are illustrative examples. Contact us for current stock, models, and pricing.</span>
+    </div>
+  </div>
+</section>
+
+<!-- FILTER + GRID -->
+<section class="section section-alt" aria-labelledby="products-grid-heading">
+  <div class="container">
+
+    <div class="section-header reveal" style="margin-bottom:var(--sp-md);">
+      <span class="section-label" data-en="Catalogue" data-am="ካታሎግ">Catalogue</span>
+      <h2 id="products-grid-heading" data-en="Browse by Category" data-am="በምድብ ይዳስሱ">Browse by Category</h2>
+    </div>
+
+    <!-- Filter buttons -->
+    <div class="products-filter reveal" role="group" aria-label="Filter products by category">
+      <button class="filter-btn active" data-filter="all"         aria-pressed="true"  data-en="All"          data-am="ሁሉም">All</button>
+      <button class="filter-btn"        data-filter="computers"   aria-pressed="false" data-en="Computers"    data-am="ኮምፒውተሮች">Computers</button>
+      <button class="filter-btn"        data-filter="phones"      aria-pressed="false" data-en="Mobile Phones" data-am="ሞባይሎች">Mobile Phones</button>
+      <button class="filter-btn"        data-filter="tvs"         aria-pressed="false" data-en="TVs"           data-am="ቴሌቪዥኖች">TVs</button>
+      <button class="filter-btn"        data-filter="solar"       aria-pressed="false" data-en="Solar Panels"  data-am="ሶላር ፓናሎች">Solar Panels</button>
+      <button class="filter-btn"        data-filter="accessories" aria-pressed="false" data-en="Accessories"   data-am="አስሳሰሪዎች">Accessories</button>
+    </div>
+
+    <div class="products-grid stagger-children" aria-live="polite" aria-label="Product listings">
+      <!--
+      <!-- ── COMPUTERS ──────────────────────────────────── 
+      <article class="product-card product-item" data-category="computers">
+        <div class="product-card-image" aria-hidden="true">
+          <img src="images/products/laptop.jpg" alt="Laptop" onerror="this.style.display='none'" />
+          <svg viewBox="0 0 24 24"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/></svg>
+        </div>
+        <div class="product-card-body">
+          <span class="product-tag">Computers</span>
+          <h4>Laptop</h4>
+          <p>Suitable for everyday use, office tasks, and light multimedia. Specs and pricing on request.</p>
+        </div>
+      </article>
+
+      <article class="product-card product-item" data-category="computers">
+        <div class="product-card-image" aria-hidden="true">
+          <img src="images/products/desktop-pc.jpg" alt="Desktop PC" onerror="this.style.display='none'" />
+          <svg viewBox="0 0 24 24"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/></svg>
+        </div>
+        <div class="product-card-body">
+          <span class="product-tag">Computers</span>
+          <h4>Desktop PC</h4>
+          <p>Ideal for home and office environments. Available in various configurations.</p>
+        </div>
+      </article>
+
+      <article class="product-card product-item" data-category="computers">
+        <div class="product-card-image" aria-hidden="true">
+          <img src="images/products/gaming-laptop.jpg" alt="Gaming Laptop" onerror="this.style.display='none'" />
+          <svg viewBox="0 0 24 24"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/></svg>
+        </div>
+        <div class="product-card-body">
+          <span class="product-tag">Computers</span>
+          <h4>Gaming Laptop</h4>
+          <p>Higher-spec options available for gaming, design, and demanding workloads.</p>
+        </div>
+      </article>
+      -->
+      <!-- ── MOBILE PHONES ───────────────────────────────── -->
+      <article class="product-card product-item" data-category="phones">
+        <div class="product-card-image" aria-hidden="true">
+          <img src="images/products/smartphone.png" alt="Smartphone" onerror="this.style.display='none'" />
+          <svg viewBox="0 0 24 24"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg>
+        </div>
+        <div class="product-card-body">
+          <span class="product-tag" data-en="Mobile Phones" data-am="ሞባይሎች">Mobile Phones</span>
+          <h4 data-en="Smartphone" data-am="ስማርትፎን">Smartphone</h4>
+          <p data-en="Latest flagship and mid-range options. Contact us for current availability and pricing." data-am="የቅርብ ጊዜ ፕሪሚየምና መካከለኛ ደረጃ አማራጮች። ስለ ነባር ክምችት እና ዋጋ ያግኙን።">Latest flagship and mid-range options. Contact us for current availability and pricing.</p>
+        </div>
+      </article>
+
+      <article class="product-card product-item" data-category="phones">
+        <div class="product-card-image" aria-hidden="true">
+          <img src="images/products/budgetphone.png" alt="Budget Smartphone" onerror="this.style.display='none'" />
+          <svg viewBox="0 0 24 24"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg>
+        </div>
+        <div class="product-card-body">
+          <span class="product-tag" data-en="Mobile Phones" data-am="ሞባይሎች">Mobile Phones</span>
+          <h4 data-en="Budget Smartphone" data-am="ቀላል ዋጋ ስማርትፎን">Budget Smartphone</h4>
+          <p data-en="Reliable performance at an affordable price point. Great for everyday communication." data-am="ተመጣጣኝ ዋጋ ያለው አስተማማኝ አፈጻጸም። ለዕለተ ዕለት ግንኙነት ጥሩ ምርጫ ነው።">Reliable performance at an affordable price point. Great for everyday communication.</p>
+        </div>
+      </article>
+      <!--
+      <article class="product-card product-item" data-category="phones">
+        <div class="product-card-image" aria-hidden="true">
+          <img src="images/products/feature-phone.jpg" alt="Feature Phone" onerror="this.style.display='none'" />
+          <svg viewBox="0 0 24 24"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg>
+        </div>
+        <div class="product-card-body">
+          <span class="product-tag">Mobile Phones</span>
+          <h4>Feature Phone</h4>
+          <p>Simple, durable, long battery life. Ideal as a backup or primary phone.</p>
+        </div>
+      </article>
+      -->
+      <!-- ── TVs ──────────────────────────────────────────── -->
+      <article class="product-card product-item" data-category="tvs">
+        <div class="product-card-image" aria-hidden="true">
+          <img src="images/products/tv.png" alt="Smart TV" onerror="this.style.display='none'" />
+          <svg viewBox="0 0 24 24"><path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14z"/></svg>
+        </div>
+        <div class="product-card-body">
+          <span class="product-tag" data-en="TVs" data-am="ቴሌቪዥኖች">TVs</span>
+          <h4 data-en="Smart TV" data-am="ስማርት ቴሌቪዥን">Smart TV</h4>
+          <p data-en="Built-in streaming apps, HD/4K resolution options. Multiple screen sizes available." data-am="የተወሃዱ ስትሪሚንግ አፕሎች፣ HD/4K ጥራት አማራጮች። በተለያዩ የማያ ጠፍጣፋ መጠኖች ይገኛሉ።">Built-in streaming apps, HD/4K resolution options. Multiple screen sizes available.</p>
+        </div>
+      </article>
+      <!--
+      <article class="product-card product-item" data-category="tvs">
+        <div class="product-card-image" aria-hidden="true">
+          <img src="images/products/led-tv.jpg" alt="LED TV" onerror="this.style.display='none'" />
+          <svg viewBox="0 0 24 24"><path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14z"/></svg>
+        </div>
+        <div class="product-card-body">
+          <span class="product-tag">TVs</span>
+          <h4>LED TV</h4>
+          <p>Energy-efficient LED display, suitable for living rooms and bedrooms.</p>
+        </div>
+      </article>
+      -->
+      <!-- ── SOLAR ─────────────────────────────────────────── -->
+      <article class="product-card product-item" data-category="solar">
+        <div class="product-card-image" aria-hidden="true">
+          <img src="images/products/solarpanel.png" alt="Solar Panel" onerror="this.style.display='none'" />
+          <svg viewBox="0 0 24 24"><path d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.79 1.42-1.41zM4 10.5H1v2h3v-2zm9-9.95h-2V3.5h2V.55zm7.45 3.91l-1.41-1.41-1.79 1.79 1.41 1.41 1.79-1.79zm-3.21 13.7l1.79 1.8 1.41-1.41-1.8-1.79-1.4 1.4zM20 10.5v2h3v-2h-3zm-8-5c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm-1 16.95h2V19.5h-2v2.95zm-7.45-3.91l1.41 1.41 1.79-1.8-1.41-1.41-1.79 1.8z"/></svg>
+        </div>
+        <div class="product-card-body">
+          <span class="product-tag" data-en="Solar Panels" data-am="ሶላር ፓናሎች">Solar Panels</span>
+          <h4 data-en="Solar Panel" data-am="ሶላር ፓናል">Solar Panel</h4>
+          <p data-en="For home, off-grid, and backup power systems. Various wattage options available." data-am="ለቤት፣ ከኔትወርክ ውጭ እና ምትኬ የኃይል ስርዓቶች። የተለያዩ የዋት አማራጮች አሉ።">For home, off-grid, and backup power systems. Various wattage options available.</p>
+        </div>
+      </article>
+
+      <article class="product-card product-item" data-category="solar">
+        <div class="product-card-image" aria-hidden="true">
+          <img src="images/products/solarcontroller.png" alt="Solar Charge Controller" onerror="this.style.display='none'" />
+          <svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
+        </div>
+        <div class="product-card-body">
+          <span class="product-tag" data-en="Solar Panels" data-am="ሶላር ፓናሎች">Solar Panels</span>
+          <h4 data-en="Solar Charge Controller" data-am="የሶላር ቻርጅ ተቆጣጣሪ">Solar Charge Controller</h4>
+          <p data-en="Protects batteries and optimises charging for solar installations." data-am="ባትሪዎችን ይጠብቃል እና ለሶላር ጭነቶች ቻርጅ ያሻሽላል።">Protects batteries and optimises charging for solar installations.</p>
+        </div>
+      </article>
+
+      <article class="product-card product-item" data-category="solar">
+        <div class="product-card-image" aria-hidden="true">
+          <img src="images/products/solarbattery.png" alt="Solar Battery" onerror="this.style.display='none'" />
+          <svg viewBox="0 0 24 24"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4z"/></svg>
+        </div>
+        <div class="product-card-body">
+          <span class="product-tag" data-en="Solar Panels" data-am="ሶላር ፓናሎች">Solar Panels</span>
+          <h4 data-en="Solar Battery" data-am="የሶላር ባትሪ">Solar Battery</h4>
+          <p data-en="Deep-cycle batteries for solar energy storage. Suitable for home backup systems." data-am="ጥልቅ-ዑደት ባትሪዎች ለሶላር ኃይል ማከማቻ። ለቤት ምትኬ ስርዓቶች ተስማሚ።">Deep-cycle batteries for solar energy storage. Suitable for home backup systems.</p>
+        </div>
+      </article>
+
+      <!-- ── ACCESSORIES ─────────────────────────────────── -->
+      <article class="product-card product-item" data-category="accessories">
+        <div class="product-card-image" aria-hidden="true">
+          <img src="images/products/screenprotector.png" alt="Phone Cases and Screen Protectors" onerror="this.style.display='none'" />
+          <svg viewBox="0 0 24 24"><path d="M12 1C5.9 1 1 5.9 1 12s4.9 11 11 11 11-4.9 11-11S18.1 1 12 1zm0 4c1.7 0 3 1.3 3 3s-1.3 3-3 3-3-1.3-3-3 1.3-3 3-3zm0 14.2c-2.5 0-4.7-1.3-6-3.2.03-2 4-3.1 6-3.1s5.97 1.1 6 3.1c-1.3 1.9-3.5 3.2-6 3.2z"/></svg>
+        </div>
+        <div class="product-card-body">
+          <span class="product-tag" data-en="Accessories" data-am="አስሳሰሪዎች">Accessories</span>
+          <h4 data-en="Phone Cases &amp; Screen Protectors" data-am="የስልክ ቦርሳዎች እና ስክሪን ጠባቂዎች">Phone Cases &amp; Screen Protectors</h4>
+          <p data-en="Protective cases and tempered glass screen protectors for popular phone models." data-am="ለታዋቂ ስልክ ሞዴሎች የጥበቃ ቦርሳዎች እና የጠጣ ብርጭቆ ስክሪን ጠባቂዎች።">Protective cases and tempered glass screen protectors for popular phone models.</p>
+        </div>
+      </article>
+
+      <article class="product-card product-item" data-category="accessories">
+        <div class="product-card-image" aria-hidden="true">
+          <img src="images/products/charger.png" alt="Charging Cables and Adapters" onerror="this.style.display='none'" />
+          <svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.31 2.69-6 6-6s6 2.69 6 6-2.69 6-6 6c-1.66 0-3.14-.69-4.22-1.78L6.36 17.64C7.8 19.07 9.79 20 12 20c4.97 0 9-4.03 9-9s-4.03-9-9-9z"/></svg>
+        </div>
+        <div class="product-card-body">
+          <span class="product-tag" data-en="Accessories" data-am="አስሳሰሪዎች">Accessories</span>
+          <h4 data-en="Charging Cables &amp; Adapters" data-am="የቻርጅ ሽቦዎች እና አዳፕተሮች">Charging Cables &amp; Adapters</h4>
+          <p data-en="USB-C, Lightning, Micro-USB cables and multi-port chargers." data-am="USB-C፣ Lightning፣ Micro-USB ሽቦዎች እና ባለብዙ ወደብ ቻርጀሮች።">USB-C, Lightning, Micro-USB cables and multi-port chargers.</p>
+        </div>
+      </article>
+
+      <article class="product-card product-item" data-category="accessories">
+        <div class="product-card-image" aria-hidden="true">
+          <img src="images/products/earphone.png" alt="Earphones and Headphones" onerror="this.style.display='none'" />
+          <svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.31 2.69-6 6-6s6 2.69 6 6-2.69 6-6 6c-1.66 0-3.14-.69-4.22-1.78L6.36 17.64C7.8 19.07 9.79 20 12 20c4.97 0 9-4.03 9-9s-4.03-9-9-9z"/></svg>
+        </div>
+        <div class="product-card-body">
+          <span class="product-tag" data-en="Accessories" data-am="አስሳሰሪዎች">Accessories</span>
+          <h4 data-en="Earphones &amp; Headphones" data-am="ኢርፎኖች እና ሄድፎኖች">Earphones &amp; Headphones</h4>
+          <p data-en="Wired and wireless audio accessories for everyday use." data-am="ለዕለት ተዕለት አጠቃቀም ሽቦ ያለው እና አልባ የድምፅ አስሳሰሪዎች።">Wired and wireless audio accessories for everyday use.</p>
+        </div>
+      </article>
+      <!--
+      <article class="product-card product-item" data-category="accessories">
+        <div class="product-card-image" aria-hidden="true">
+          <img src="images/products/peripherals.jpg" alt="Computer Peripherals" onerror="this.style.display='none'" />
+          <svg viewBox="0 0 24 24"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/></svg>
+        </div>
+        <div class="product-card-body">
+          <span class="product-tag">Accessories</span>
+          <h4>Computer Peripherals</h4>
+          <p>Keyboards, mice, USB hubs, and external storage devices.</p>
+        </div>
+      </article>
+    -->
+      <article class="product-card product-item" data-category="accessories">
+        <div class="product-card-image" aria-hidden="true">
+          <img src="images/products/powerbank.png" alt="Power Banks" onerror="this.style.display='none'" />
+          <!--<svg viewBox="0 0 24 24"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4z"/></svg>-->
+        </div>
+        <div class="product-card-body">
+          <span class="product-tag" data-en="Accessories" data-am="አስሳሰሪዎች">Accessories</span>
+          <h4 data-en="Power Banks" data-am="ፓወር ባንኮች">Power Banks</h4>
+          <p data-en="Portable chargers in various capacities to keep your devices powered on the go." data-am="በመጓጓዣ ላይ መሳሪያዎቻችሁን ሃይል ለማቆየት በተለያዩ አቅሞች ተንቀሳቃሽ ቻርጀሮች።">Portable chargers in various capacities to keep your devices powered on the go.</p>
+        </div>
+      </article>
+
+    </div><!-- /products-grid -->
+
+  </div>
+</section>
+
+<!-- CONTACT CTA -->
+<section class="section" aria-label="Products contact call to action">
+  <div class="container">
+    <div class="exchange-callout reveal">
+      <h2 data-en="Looking for Something Specific?" data-am="የሆነ ነገር ፈልገዋል?">Looking for Something Specific?</h2>
+      <p data-en="Our catalogue is regularly updated. If you can't see what you need, contact us  we may be able to source it or point you in the right direction." data-am="ካታሎጋችን በየጊዜው ይዘመናል። የሚፈልጉትን ካላዩ ያግኙን  ለማግኘት ወይም ትክክለኛ አቅጣጫ ለመጠቆም እንሞክራለን።">
+        Our catalogue is regularly updated. If you can't see what you need, contact us 
+        we may be able to source it or point you in the right direction.
+      </p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;position:relative;z-index:1;">
+        <a href="contact.html" class="btn btn-outline-dark btn-lg" data-en="Contact Us" data-am="ያግኙን">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container footer-bar">
+    <a href="index.html" class="nav-logo footer-logo" aria-label="Rehoboth Technology  Home">
+      <div class="nav-logo-icon" aria-hidden="true"><img src="images/logo.png" alt="" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" /><svg viewBox="0 0 24 24" class="logo-fallback"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg></div>
+      <div class="nav-logo-text">Rehoboth Technology<span>Technology</span></div>
+    </a>
+    <div class="footer-right">
+      <p class="footer-copy">&copy; <span class="current-year"></span> Rehoboth Technology</p>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top" style="position:fixed;bottom:1.5rem;right:1.5rem;width:44px;height:44px;background:var(--clr-primary);color:#fff;border:none;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;transform:translateY(12px);transition:opacity .3s ease,transform .3s ease;box-shadow:var(--shadow-md);z-index:900;">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="#fff" aria-hidden="true"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+</button>
+<style>.back-to-top.visible{opacity:1;transform:translateY(0)}</style>
+
+<script src="js/main.js"></script>
+</body>
+</html>
